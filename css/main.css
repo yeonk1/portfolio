@@ -242,7 +242,7 @@ main {
 
 .sc_mid {
     min-height: 100vh;
-    font-size: 100px;
+    font-size: 4vw;
     line-height: 1.2;
     font-weight: bold;
     color: #fff;
