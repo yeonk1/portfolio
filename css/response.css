@@ -223,6 +223,7 @@
 }
 @media screen and (max-width: 400px) {
     .loading .ld_wrap {
-       font-size: 30px;
+       font-size: 35px;
+        height: 35px;
     }
 }
