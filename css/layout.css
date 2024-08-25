@@ -1,0 +1,299 @@
+
+.cursor {
+    width: 150px;
+    height: 150px;
+    background: rgb(242, 193, 32);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+.cursor.right {
+    width: 0;
+    height: 0;
+}
+
+.cursor.right::after {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 75px;
+    height: 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+}
+
+.cursor.right::before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 75px;
+    height: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 51px;
+}
+
+.cursor.left {
+    width: 0;
+    height: 0;
+}
+
+.cursor.left::after {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 75px;
+    height: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 51px;
+}
+
+.cursor.left::before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 75px;
+    height: 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.cursor.c02 {
+}
+
+.cursor.c03 {
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    color: #fff;
+    z-index: 98;
+    pointer-events: none;
+    transition: 0.7s;
+}
+
+header.active {
+    color: #1a1a1a;
+}
+
+header .m_header {
+    font-size: 18px;
+    display: none;
+}
+
+header .m_header h1 {
+    position: absolute;
+    font-weight: bold;
+    pointer-events: visible;
+    display: block;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    pointer-events: visible;
+}
+
+header .m_header .m_contact {
+    font-size: 13px;
+    pointer-events: visible;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    display: block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+header.active .m_header .m_contact {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+header .fix_menu {
+    font-size: 23px;
+}
+
+header .fix_menu .logo {
+    position: absolute;
+    display: block;
+    left: 3vw;
+    top: 3vw;
+    pointer-events: visible;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+header .fix_menu .logo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+
+header .fix_menu .logo:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 10px solid #fff;
+}
+
+header.active .fix_menu .logo::after {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+header.active .fix_menu .logo:hover::after {
+    border-bottom: 10px solid #1a1a1a;
+}
+
+
+header .fix_menu .project {
+    position: absolute;
+    right: 3vw;
+    top: 3vw;
+    pointer-events: visible;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header .fix_menu .project::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #fff;
+    transition: 0.5s;
+}
+
+header .fix_menu .project:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #fff;
+}
+
+header.active .fix_menu .project::after {
+    border-bottom: 5px solid #1a1a1a;
+}
+
+header.active .fix_menu .project:hover::after {
+    border-bottom: 5px solid #1a1a1a;
+}
+
+
+header .fix_menu .about {
+    position: absolute;
+    left: 3vw;
+    bottom: 3vw;
+    pointer-events: visible;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header .fix_menu .about::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #fff;
+    transition: 0.5s;
+}
+
+header .fix_menu .about:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #fff;
+}
+
+header.active .fix_menu .about::after {
+    border-bottom: 5px solid #1a1a1a;
+}
+
+header.active .fix_menu .about:hover::after {
+    border-bottom: 5px solid #1a1a1a;
+}
+
+header .fix_menu .contact {
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    pointer-events: visible;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header .fix_menu .contact::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #fff;
+    transition: 0.5s;
+}
+
+header .fix_menu .contact:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #fff;
+}
+
+header.active .fix_menu .contact::after {
+    border-bottom: 5px solid #1a1a1a;
+}
+
+header.active .fix_menu .contact:hover::after {
+    border-bottom: 5px solid #1a1a1a;
+}
