@@ -211,4 +211,10 @@
         padding-top: 30px;
         border-top: 1px solid #ddd;
     }
+    .sc_bottom .left h2 {
+        font-size: 7vw;
+    }
+    .sc_bottom .left a, .sc_bottom .left a b{
+        font-size: 5vw;
+    }
 }
