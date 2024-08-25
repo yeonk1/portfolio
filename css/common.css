@@ -82,7 +82,7 @@ body.active {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10%);
+        transform: translateY(-10px);
     }
     100% {
         transform: translateY(0);
@@ -94,36 +94,13 @@ body.active {
         transform: translateY(0) rotate(-45deg);
     }
     50% {
-        transform: translateY(-200%) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
     }
     100% {
         transform: translateY(0) rotate(-45deg);
     }
 }
 
-@keyframes scroll_arr2 {
-    0% {
-        transform: translateY(0) rotate(-45deg);
-    }
-    50% {
-        transform: translateY(-90%) rotate(-45deg);
-    }
-    100% {
-        transform: translateY(0) rotate(-45deg);
-    }
-}
-
-@keyframes scroll_arr3 {
-    0% {
-        transform: translateY(0) rotate(-45deg);
-    }
-    50% {
-        transform: translateY(-150%) rotate(-45deg);
-    }
-    100% {
-        transform: translateY(0) rotate(-45deg);
-    }
-}
 
 
 
