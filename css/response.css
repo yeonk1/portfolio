@@ -177,6 +177,9 @@
     .sc_mid {
         font-size: 35px;
     }
+    .sc_mid p {
+        padding: 0 50px;
+    }
     .sc_mid .img_wrap {
         height: 120vh;
         top: 100%;
@@ -196,6 +199,12 @@
         width: calc((100% - 15px) / 2);
         margin-left: 15px;
     }
+    .sc_bottom .left h2 {
+        font-size: 7vw;
+    }
+    .sc_bottom .left a, .sc_bottom .left a b{
+        font-size: 5vw;
+    }
     .modal-inner {flex-flow: column; max-height: 90vh;
         height: 100%;
         padding: 50px;}
@@ -211,10 +220,6 @@
         padding-top: 30px;
         border-top: 1px solid #ddd;
     }
-    .sc_bottom .left h2 {
-        font-size: 7vw;
-    }
-    .sc_bottom .left a, .sc_bottom .left a b{
-        font-size: 5vw;
-    }
+
+
 }
