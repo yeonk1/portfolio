@@ -248,7 +248,6 @@ main {
     color: #fff;
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 .sc_mid::after {
     content: '';
